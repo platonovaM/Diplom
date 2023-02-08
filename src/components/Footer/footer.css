@@ -1,0 +1,19 @@
+.foot{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgb(238, 234, 225);
+    width: 1100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:  rgb(100, 100, 100);
+}
+.footer_text{
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+.adwert_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 28px;
+    
+}
+.adwert_left{
+    width: 1fr;
+    height: 396px;
+    background-color: rgb(239, 242, 243);
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.877);
+}
+.adwert_сenter{
+    width: 1fr;
+    height: auto;
+    background-color:  rgb(239, 242, 243);
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.877);
+}
+.adwert_right{
+    width: 1fr;
+    height: auto;
+    background-color:  rgb(239, 242, 243);
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.877);
+}
+.left_img{
+    height: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+}
+.adwert_text{
+    padding-left: 10px;
+}
