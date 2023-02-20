@@ -11,6 +11,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     color:  rgb(100, 100, 100);
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.877);
 }
 .footer_text{
     display: grid;

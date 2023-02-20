@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Playfair+Display&display=swap');
+
+body{
+    height: 100%;
+
+}
+
 .container{
-    min-height: 100vh;
+	height: 100%;
+}
+.content{
+    min-height: calc(100vh - 200px);
+}
+
+.maps_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps{
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-image: url(./pages/karte.png);
+    background-position: center;
+    background-size: cover;
+
+}
+form{
+    display: grid;
+    grid-template-columns: 180px;
+    gap:10px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    padding: 10px;
+    align-items: stretch;
+    padding: 30px;
+}
+.venue_pr{
+    display: flex;
+    padding-left: 50px ;
+}
+
+.floor{
+    color: gray;
+}
+
+.description, .name{
+    padding-left: 50px ;
+}
+.img_ven{
+    margin-right: 50px;
+    border-radius: 15px;
+}
+
+.description{
+    color: rgb(139, 139, 139);
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif;
+    
+}
+.name{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 235, 235);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+    color:  rgb(192, 132, 84);;
+    
+}
+
+.back{
+    background-color: rgb(238, 234, 225);
+    width: 130px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    color:  rgb(100, 100, 100);
+    box-shadow: 0 0 5px rgba(34, 34, 34, 0.877);
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 22px;
+    padding-left: 10px;
+}
+
+.back :hover{
+    color: rgb(11, 148, 148);
+
+}
+h1{
+    padding-left: 30px;
 }

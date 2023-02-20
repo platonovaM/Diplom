@@ -1,0 +1,24 @@
+.kontakns{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.number_info{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 180px 134px;
+}
+
+.time>h4{
+    color: rgba(61, 61, 61, 0.575);
+}
+.addres>h4{
+    color: rgba(61, 61, 61, 0.575);
+}
+.name_fon>h4{
+    color: rgba(61, 61, 61, 0.575);
+}
+.numberfon>h4{
+    color:rgba(61, 61, 61, 0.575);
+}
