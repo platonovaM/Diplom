@@ -14,8 +14,8 @@ import {Api} from "./Api.js";
 
 
 
-const App=({type})=>{
 
+const App=({type})=>{
 const [user, setUser] = useState(localStorage.getItem("admin"));
 const [api, setApi] = useState(new Api());
 
@@ -31,7 +31,6 @@ useEffect(() => {
                 setRest(arrRest)
                 let arrShop=data.filter(e=>e.type!=="rest")
                 setShop(arrShop)
-            console.log(data)
         })
 }, [])
 

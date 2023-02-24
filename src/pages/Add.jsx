@@ -11,6 +11,8 @@ const [time, setTime]=useState("");
 const [description, setDiscription]=useState("");
 const [image, setImage] = useState("");
 const [id, setId] = useState("");
+const [mapId, setMapId] = useState("");
+const [link, setLink]=useState("");
 const navigate =useNavigate();
 
 const clear=(e)=>{
@@ -20,6 +22,8 @@ const clear=(e)=>{
     setDiscription("");
     setImage("");
     setType("");
+    setMapId("");
+    setLink("");
     
 }
 
@@ -32,9 +36,10 @@ const handler =async (e)=>{
         time: time || "c 10:00",
         description: description || "Описание скоро будет",
         image: image ,
-        id: id
+        id: id,
+        mapId: mapId,
+        link: link
     }
-    console.log(body);
          const res = await fetch(`https://api.petiteweb.dev/sber/mall`, {
         method: "POST",
         headers: {
@@ -42,9 +47,9 @@ const handler =async (e)=>{
         },
         body: JSON.stringify(body)
     });
-    console.log(res)
+ 
     const data = await res.json();
-    console.log(data);
+   
     if (!data.error) {
         clear();
         navigate("/");
@@ -97,6 +102,21 @@ return<form onSubmit={handler}>
         value={image}
         onChange={e=>setImage(e.target.value)}
     />
+
+<input
+        type="text"
+        placeholder="id map"
+        value={mapId}
+        onChange={e=>setMapId(e.target.value)}
+    />
+
+<input
+        type="text"
+        placeholder="link"
+        value={link}
+        onChange={e=>setLink(e.target.value)}
+    />
+
     <button  type="submit">Добавить</button>
 </form>
 }

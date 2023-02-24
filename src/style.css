@@ -3,11 +3,15 @@
 
 body{
     height: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .container{
 	height: 100%;
+    max-width: 1200px;
+    
 }
 .content{
     min-height: calc(100vh - 200px);
@@ -105,3 +109,12 @@ form{
 h1{
     padding-left: 30px;
 }
+a{
+    text-decoration: none;
+    color: rgb(113, 158, 216);
+    font-size: 16px;
+}
+
+
+
+

@@ -6,7 +6,7 @@ import {ChevronCompactLeft} from "react-bootstrap-icons"
 
 
 
-export default ({name, floor, time, description, image}) => {
+export default ({}) => {
     const [venue, setVenue] =useState([]);
     const{id}=useParams();
 
@@ -16,7 +16,7 @@ export default ({name, floor, time, description, image}) => {
             .then(res=>res.json())
            .then(data=>{ 
             if(!data.error){
-                console.log(data)
+    
                 setVenue(data)
             }
         })
@@ -35,8 +35,9 @@ export default ({name, floor, time, description, image}) => {
     <div className="venue_pr">
     <img className="img_ven" src={venue.image}  style={{height:"300px"}}/>
     <div className="floor">
-        <h3>Этаж {venue.floor}</h3>
+        <h3>Этаж: {venue.floor}</h3>
         <h3>Часы работы: {venue.time}</h3>
+        <h3>Официальный сайт: <a href={venue.link}>{venue.link}</a></h3>
     </div>
     </div>
     <div className="description">
